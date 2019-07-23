@@ -11,9 +11,9 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import Hero from '../components/hero';
+import Hero from "../components/hero"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, hero }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,7 +27,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Hero />
+      {hero ? <Hero /> : null}
+
       <div
         style={{
           margin: `0 auto`,
@@ -37,9 +38,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, by Elliot Reed
-        </footer>
+        <footer>© {new Date().getFullYear()}, by Elliot Reed</footer>
       </div>
     </>
   )

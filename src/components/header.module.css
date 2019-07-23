@@ -17,3 +17,22 @@ header {
   color: var(--mainBrand);
   text-decoration: none;
 }
+
+nav {
+  background: var(--lightAccent)
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-ul li a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.nav-ul li {
+  margin-right: 1rem;
+}
