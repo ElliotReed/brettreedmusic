@@ -1,0 +1,19 @@
+header {
+  background: var(--dark);
+  margin-bottom: 1.45rem;
+}
+
+.logo-wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+}
+
+.logo {
+  margin: 0;
+}
+
+.logo a {
+  color: var(--mainBrand);
+  text-decoration: none;
+}
