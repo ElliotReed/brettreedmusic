@@ -1,22 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
 /* #region Variables */
 :root {
   --fontStack: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --fontDisplay: "Shadows Into Light", cursive;
   --fontColorLight: rgba(235, 235, 235);
   --fontColorDark: rgb(35, 35, 35);
   --overlayDark: rgba(35, 35, 35, 0.75);
   --overlay-dark: rgba(35, 35, 35, 0.15);
 
   /* colors */
-  --light: #9894AA;
+  --light: #9894aa;
   --lightRGB: 226, 218, 196;
   --lightAccent: #827899;
   --lightAccentRGB: 148, 153, 131;
-  --mainBrand: #E183B1;
-  --mainBrandRGB: 69, 93, 78;
-  --darkAccent: #763B44;
+  --mainBrand: #e183b1;
+  --mainBrandRGB: 225, 131, 177;
+  --darkAccent: #763b44;
   --darkAccentRGB: 126, 115, 102;
-  --dark: #39242B;
+  --dark: #39242b;
   --darkRGB: 34, 26, 29;
 
   /* sizes */

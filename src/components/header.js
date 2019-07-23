@@ -8,12 +8,12 @@ const Navbar = () => {
   return (
     <nav>
       <ul className={headerStyles.navUl}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/music">Music</Link></li>
-        <li><Link to="/scores">Scores</Link></li>
-        <li><Link to="/purchase">Purchase</Link></li>
-        <li><Link to="/production">Production</Link></li>
+        <li><Link to="/" activeClassName={headerStyles.active}>Home</Link></li>
+        <li><Link to="/about" activeClassName={headerStyles.active}>About</Link></li>
+        <li><Link to="/music" activeClassName={headerStyles.active}>Music</Link></li>
+        {/* <li><Link to="/scores" activeClassName={headerStyles.active}>Scores</Link></li> */}
+        <li><Link to="/purchase" activeClassName={headerStyles.active}>Purchase</Link></li>
+        <li><Link to="/production" activeClassName={headerStyles.active}>Production</Link></li>
       </ul>
     </nav>
   )

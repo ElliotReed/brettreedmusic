@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const ProductionPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="Production" />
     <h1>Production</h1>
     <p>Under Construction</p>
   </Layout>

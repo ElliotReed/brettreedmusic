@@ -6,7 +6,7 @@ import SpotifyPlaylist from "../components/spotify"
 
 const MusicPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="Music" />
     <h1>Music</h1>
     <SpotifyPlaylist />
   </Layout>

@@ -3,3 +3,26 @@
   flex-wrap: wrap;
   width:100%; 
 }
+
+
+@media screen and (min-width: 768px) {
+  .widget-container > iframe {
+    max-width: calc(384px - 1rem);
+    margin-right: 1rem;
+  }
+  .widget-container > div {
+    max-width: 384px;
+    /* margin-left: 1rem; */
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .widget-container > iframe {
+    max-width: calc(480px - 1rem);
+    margin-right: 1rem;
+  }
+  .widget-container > div {
+    max-width: 480px;
+    /* margin-left: 1rem; */
+  }
+}
