@@ -1,25 +1,26 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "brett-reed",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.15.34",
-    "gatsby-image": "^2.2.25",
-    "gatsby-plugin-manifest": "^2.2.21",
-    "gatsby-plugin-offline": "^3.0.13",
-    "gatsby-plugin-react-helmet": "^3.1.11",
-    "gatsby-plugin-sharp": "^2.2.29",
-    "gatsby-source-filesystem": "^2.1.31",
-    "gatsby-transformer-sharp": "^2.2.21",
-    "prop-types": "^15.7.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "gatsby": "^ 5.16.1",
+    "gatsby-cli": "^5.16.0",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^5.16.0",
+    "gatsby-plugin-offline": "^6.16.0",
+    "gatsby-plugin-sharp": "^5.16.0",
+    "gatsby-plugin-twitter": "^5.16.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^3.8.3"
   },
   "keywords": [
     "gatsby"

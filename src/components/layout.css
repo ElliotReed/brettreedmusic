@@ -1,12 +1,88 @@
+/* #region fonts */
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
+
+/* #region Variables */
+:root {
+  --fontStack: 'Noto Sans', sans-serif;
+  --fontDisplay: "Shadows Into Light", cursive;
+  --fontColorLight: rgba(235, 235, 235);
+  --fontColorDark: rgb(35, 35, 35);
+  --overlayDark: rgba(35, 35, 35, 0.75);
+  --overlay-dark: rgba(35, 35, 35, 0.15);
+
+  /* colors */
+  /* --light: #9894aa; */
+  /* --white: hsl(330, 50%, 95%); */
+  /* --light: hsl(325, 50%, 51%); */
+  /* --light: hsl(333, 90%, 75%); */
+  --light: hsl(330, 10%, 90%);
+  /* --complimentLight: hsl(210, 50%, 80%); */
+  /* --compliment: hsl(240, 50%, 40%); */
+  /* --complimentDark: hsl(240, 40%, 30%); */
+  --lightRGB: 226, 218, 196;
+  /* --lightAccent: #827899; */
+  /* --lightAccent: #162430; */
+  --lightAccent: hsl(330, 60%, 70%);
+  --lightAccentRGB: 148, 153, 131;
+  --mainBrandLight: hsl(310, 50%, 80%);
+  --mainBrand: #e084b2;
+  --mainBrandDark: #cc6599;
+  --mainBrandRGB: 224, 132, 178;
+  --darkAccent: hsl(330, 40%, 20%);
+  --darkAccentRGB: 126, 115, 102;
+  /* --dark: #39242b; */
+  /* --dark: #39242b; */
+  --dark: #260c19;
+  --darkRGB: 34, 26, 29;
+  --black: hsl(330, 30%, 10%);
+
+  /* sizes */
+  --margin: 1.618rem;
+  --padding: 1.618rem;
+}
+/* set default base size for deveice and reading distance */
+/* mobile */
 html {
-  font-family: sans-serif;
+  font-size: 16px;
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 1080px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+html {
+  font-family: var(--fontStack);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
 }
+
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--mainBrandLight);
+  justify-content: space-between;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--dark);
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
 }
 article,
 aside,
@@ -185,7 +261,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  /* font: 112.5%/1.45em georgia, serif; */
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -198,17 +274,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
-}
+
 img {
   max-width: 100%;
   margin-left: 0;
@@ -228,10 +294,9 @@ h1 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.618rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--fontStack);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -247,8 +312,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--fontStack);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -264,8 +328,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--fontStack);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -281,8 +344,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--fontStack);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -298,8 +360,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--fontStack);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -315,8 +376,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--fontStack);
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -333,14 +393,14 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
-  margin-left: 1.45rem;
+  margin-left: 1.618rem;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.618rem;
   list-style-position: outside;
   list-style-image: none;
 }
@@ -471,7 +531,7 @@ iframe {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.618rem;
 }
 hr {
   margin-left: 0;
@@ -615,8 +675,8 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
+
+footer {
+  text-align: end;
+  margin: var(--margin);
 }

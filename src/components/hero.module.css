@@ -1,0 +1,35 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url(../images/hero.jpg);
+  height: 20rem;
+  width: 100%;
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -1.618rem;
+  margin-bottom: 1.618rem;
+  font-family: var(--fontDisplay);
+  font-weight: bold;
+  padding: var(--padding);
+  font-size: 1.618rem;
+}
+
+.text-wrapper {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.text-wrapper > p {
+  width: 50%;
+  color: var(--mainBrandLight);
+  text-shadow: 6px 6px 6px var(--dark), -6px -6px 6px var(--darkAccent);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero{
+    justify-content: center;
+  }
+}

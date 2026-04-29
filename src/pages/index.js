@@ -1,20 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
+import TwitterTimeline from "../components/twitter"
+import SpotifyPlaylist from "../components/spotify"
+import Calendar from "../components/calendar"
+
+import * as indexStyles from "./index.module.css"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout hero="true">
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    {/* <Calendar /> */}
+    <div className={indexStyles.widgetContainer}>
+      <SpotifyPlaylist />
+      <TwitterTimeline />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
+    </div> */}
   </Layout>
 )
 

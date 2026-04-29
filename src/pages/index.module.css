@@ -1,0 +1,28 @@
+.widget-container {
+  --deskWidth: calc(540px - .5rem);
+  --tabletWidth: calc(384px - .5rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .widget-container > iframe {
+    max-width: var(--tabletWidth);
+    padding-right: calc(var(--padding) / 2);
+  }
+  .widget-container > div {
+    max-width: var(--tabletWidth);
+    padding-left: calc(var(--padding) / 2);
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .widget-container > iframe {
+    max-width: var(--deskWidth);
+  }
+  .widget-container > div {
+    max-width:var(--deskWidth);
+  }
+}

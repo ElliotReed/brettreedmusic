@@ -1,0 +1,58 @@
+.header {
+  background: linear-gradient(135deg, var(--dark), var(--darkAccent));
+  margin-bottom: 1.618rem;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+
+}
+
+.logo-wrapper {
+  max-width: 1080px;
+  padding: var(--padding);
+}
+
+.logo {
+  margin: 0;
+  line-height: 1.618rem;
+  font-size: 1.618rem;
+  font-family: var(--fontDisplay);
+  font-weight: 500;
+}
+
+.logo a {
+  color: var(--mainBrand);
+  text-shadow: 0px 0px 8px var(--mainBrandLight);
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-ul li a {
+  color: var(--mainBrand);
+  text-decoration: none;
+}
+
+.nav-ul > li {
+  margin: 0 1rem 0 0;
+}
+
+.active-link {
+  color: var(--mainBrandDark);
+}

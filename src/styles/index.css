@@ -1,0 +1,42 @@
+/* #region Variables */
+:root {
+  --fontStack: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* --fontStack: Arial, Helvetica, sans-serif; */
+  --fontColorLight: rgba(235, 235, 235);
+  --fontColorDark: rgb(35, 35, 35);
+  --overlayDark: rgba(35, 35, 35, 0.75);
+  --overlay-dark: rgba(35, 35, 35, 0.15);
+
+  /* colors */
+  --light: #e2dac4;
+  --lightRGB: 226, 218, 196;
+  --lightAccent: #949983;
+  --lightAccentRGB: 148, 153, 131;
+  --mainBrand: #455d4e;
+  --mainBrandRGB: 69, 93, 78;
+  --darkAccent: #7e7366;
+  --darkAccentRGB: 126, 115, 102;
+  --dark: #221a1d;
+  --darkRGB: 34, 26, 29;
+  /* sizes */
+  --margin: 1rem;
+  --padding: 1rem;
+}
+/* set default base size for deveice and reading distance */
+/* mobile */
+html {
+  font-size: 16px;
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 1080px) {
+  html {
+    font-size: 22px;
+  }
+}
